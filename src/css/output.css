@@ -9,6 +9,7 @@
     --color-indigo-500: oklch(0.585 0.233 277.117);
     --color-rose-500: oklch(0.645 0.246 16.439);
     --color-rose-600: oklch(0.586 0.253 17.585);
+    --color-rose-800: oklch(0.455 0.188 13.697);
     --color-slate-50: oklch(0.984 0.003 247.858);
     --color-slate-100: oklch(0.968 0.007 247.896);
     --color-slate-200: oklch(0.929 0.013 255.508);
@@ -2030,6 +2031,20 @@
       }
     }
   }
+  .group-hover\:bg-rose-600 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-color: var(--color-rose-600);
+      }
+    }
+  }
+  .group-hover\:bg-rose-800 {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-color: var(--color-rose-800);
+      }
+    }
+  }
   .group-hover\:bg-white {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -2051,10 +2066,24 @@
       }
     }
   }
+  .hover\:bg-gray-600 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-600);
+      }
+    }
+  }
   .hover\:bg-rose-500 {
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-rose-500);
+      }
+    }
+  }
+  .hover\:bg-rose-600 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-rose-600);
       }
     }
   }
@@ -2452,4 +2481,7 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-c
+@property --tw-contain-style {
+  syntax: "*";
+  inherits: false;
+}
