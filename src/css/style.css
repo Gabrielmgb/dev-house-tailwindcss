@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+    /* --font-poppins: "poppins","sans-serif"; */
+    --font-sans: "poppins", "sans-serif";
+  }
+
+
