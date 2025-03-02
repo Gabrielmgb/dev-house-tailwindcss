@@ -388,6 +388,9 @@
       max-width: 96rem !important;
     }
   }
+  .m-9 {
+    margin: calc(var(--spacing) * 9);
+  }
   .my-1 {
     margin-block: calc(var(--spacing) * 1);
   }
@@ -942,6 +945,9 @@
   .justify-items-stretch {
     justify-items: stretch;
   }
+  .gap-0 {
+    gap: calc(var(--spacing) * 0);
+  }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
@@ -1430,6 +1436,12 @@
   }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
+  }
+  .pl-2 {
+    padding-left: calc(var(--spacing) * 2);
+  }
+  .pl-4 {
+    padding-left: calc(var(--spacing) * 4);
   }
   .text-center {
     text-align: center;
